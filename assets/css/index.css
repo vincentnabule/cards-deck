@@ -1,0 +1,78 @@
+* {
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+	border-color: antiquewhite;
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+}
+
+.cards {
+	--width: 140px;
+	--height: var(var(--width) * 1.5);
+	width: var(--width) !important;
+	height: var(--height) !important;
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	padding: 0.5px;
+}
+
+.cards img {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.my_card {
+	width: 122px;
+	height: 183px;
+	position: relative;
+	transition: all 1s linear;
+	/* transition: transform 2.5s; */
+	transform-style: preserve-3d;
+}
+
+.flip_it:hover .my_card {
+	transform: rotateY(180deg);
+
+}
+
+.back_card,
+.front_card {
+	width: 100% !important;
+	height: 100% !important;
+	position: absolute;
+}
+
+.back_card {
+	z-index: 100;
+	backface-visibility: hidden;
+}
+
+.front_card {
+	transform: rotateY(180deg);
+}
+
+.hcard button {
+	border: none !important;
+}
+
+.hcard button:hover {
+	cursor: pointer;
+	border-color: red !important;
+}
+
+.cards0 {
+	--width: 140px;
+	--height: var(var(--width) * 1.5);
+	width: var(--width) !important;
+	height: var(--height) !important;
+	background-position: center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	padding: 0.5px;
+}
