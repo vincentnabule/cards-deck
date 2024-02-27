@@ -76,3 +76,9 @@ body {
 	background-repeat: no-repeat;
 	padding: 0.5px;
 }
+.blackBG{
+	background-color: black !important;
+}
+footer{
+	color: white !important;
+}
